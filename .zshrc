@@ -8,7 +8,7 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 17)
 #export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
 
-
+# TODO: Set your actual secret value here
 export CMIS_GRAPHQL_BASIC_AUTH="YOUR_SECRET_HERE"
 
 export N_PREFIX=$HOME/.n
