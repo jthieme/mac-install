@@ -37,48 +37,6 @@ else
     echo "Failed to install Bruno"
 fi
 
-echo "Using Homebrew to install Colima..."
-if brew install --cask colima; then
-    echo "Colima installation complete."
-else
-    echo "Failed to install Colima"
-fi
-
-echo "Using Homebrew to install Docker..."
-if brew install --cask docker; then
-    echo "Docker installation complete."
-else
-    echo "Failed to install Docker"
-fi
-
-echo "Using Homebrew to install AWS CLI..."
-if brew install --cask awscli; then
-    echo "AWS CLI installation complete."
-else
-    echo "Failed to install AWS CLI"
-fi
-
-echo "Using Homebrew to install Clipy..."
-if brew install --cask clipy; then
-    echo "Clipy installation complete."
-else
-    echo "Failed to install Clipy"
-fi
-
-echo "Using Homebrew to install Codex..."
-if brew install --cask codex; then
-    echo "Codex installation complete."
-else
-    echo "Failed to install Codex"
-fi
-
-echo "Using Homebrew to install Git Credential Manager..."
-if brew install --cask git-credential-manager; then
-    echo "Git Credential Manager installation complete."
-else
-    echo "Failed to install Git Credential Manager"
-fi
-
 echo "Downloading .zshrc to your home directory..."
 if curl -fsSL https://raw.githubusercontent.com/jthieme/mac-install/main/.zshrc -o ~/.zshrc; then
     echo ".zshrc downloaded and installed successfully."

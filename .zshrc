@@ -1,3 +1,13 @@
+export PATH="/usr/local/opt/node@16/bin:$PATH"
+export PATH="/usr/local/opt/node@18/bin:$PATH"
+export PATH="/usr/local/opt/node@14/bin:$PATH"
+
+export JAVA_HOME=$(/usr/libexec/java_home -v 17)
+
+export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
+
+# TODO: Set your actual secret value here
+export CMIS_GRAPHQL_BASIC_AUTH="YOUR_SECRET_HERE"
 export JAVA_HOME="/opt/homebrew/opt/openjdk@17"
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 
@@ -107,14 +117,12 @@ alias rebru='cd /usr/local/Caskroom && rm -rf bruno && cd ~ && brew install brun
 
 alias awsl='aws --endpoint=http://localhost:4566 $@'
 
-alias closeCodex='codex "/quit"'
-
-alias jiraMoveTicketToCodeReview='codex "Use the Jira MCP server to move the ticket id that matches my branch excluding the dev/ to Code Review" && closeCodex'
-
-alias create-pr='git push origin HEAD && gh pr create --base PreRelease --head $(git rev-parse --abbrev-ref HEAD) --title $(git rev-parse --abbrev-ref HEAD) --reviewer ICS-ENG/pth-web-team,ICS-ENG/pth-web-team-admins && jiraMoveTicketToCodeReview'
-
 alias music-init='sudo ln -sf $HOME/.colima/default/docker.sock /var/run/docker.sock && aws sso login --profile music-non-prod'
 alias music-start='colima start &&  npm run dev-aws'
+export FSY_REPO_LOCATION="~/Documents/Projects"
+export FSY_REPO_LOCATION="/Users/coder20/Documents/Projects"
+export FSY_REPO_LOCATION="~/Documents/Projects"
+export MUSIC_REPO_LOCATION="/Users/coder20/Documents/Projects/pth-sacred-music-web"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
