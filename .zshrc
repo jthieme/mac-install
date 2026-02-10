@@ -1,7 +1,7 @@
 export JAVA_HOME="/opt/homebrew/opt/openjdk@17"
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 
-export GITHUB_PAT="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"
+export GITHUB_PAT=""
 
 export CMIS_GRAPHQL_BASIC_AUTH=""
 
