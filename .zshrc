@@ -4,12 +4,16 @@ export PATH="/usr/local/opt/node@14/bin:$PATH"
 
 export JAVA_HOME=$(/usr/libexec/java_home -v 17)
 
-#export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
-#export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
 
 # TODO: Set your actual secret value here
 export CMIS_GRAPHQL_BASIC_AUTH="YOUR_SECRET_HERE"
+export JAVA_HOME="/opt/homebrew/opt/openjdk@17"
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+
+export GITHUB_PAT=""
+
+export CMIS_GRAPHQL_BASIC_AUTH=""
 
 export N_PREFIX=$HOME/.n
 export PATH=$N_PREFIX/bin:$PATH
